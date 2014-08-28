@@ -1,0 +1,28 @@
+<div class="results table">
+
+  <div class="heading">
+    Report Card
+  </div>
+
+  <div class="subheadings">
+    <span class="selected">{{ headings.heading1 }}</span>    
+    <span>{{ headings.heading2 }}</span>    
+    <span>{{ headings.heading3 }}</span>    
+  </div>
+
+  <div devil   ng-if="strategyLevel1 <=3 && cultureLevel1 <=3"></div>
+  <div penguin ng-if="strategyLevel1 <=3 && cultureLevel1 >=4"></div>
+  <div tiger   ng-if="strategyLevel1 >=4 && cultureLevel1 <=3"></div>
+  <div dolphin ng-if="strategyLevel1 >=4 && cultureLevel1 >=4"></div>
+
+</div>
+
+
+<div class="go-back" ng-click="redirect('/questions2')">GO BACK</div>
+
+<hr>
+<b>debug</b>
+<br>
+stratey: {{strategyLevel1}}
+<br>
+culture: {{cultureLevel1}}

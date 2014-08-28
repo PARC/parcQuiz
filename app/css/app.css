@@ -1,0 +1,136 @@
+/* SPLASH PAGE */
+
+.splash .subheading {
+  margin-bottom: 8px;
+}
+
+.splash .heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.splash .description {
+  margin-bottom: 5px;
+}
+
+.splash img {
+  width: 400px;
+  margin-bottom: 15px;
+}
+
+.splash .calltoaction {
+  font-weight: bold;
+}
+
+/* QUESTIONS PAGE */
+
+.hidden {
+  display: none;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+.quiz-heading {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.table {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* RESULTS PAGE */
+
+.results .heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.results .subheadings {
+  margin-bottom: 25px;
+}
+
+.results .subheadings span {
+  color: #888888;
+  font-weight: bold;
+  margin-right: 24px;
+}
+
+.results .subheadings .selected {
+  color: black;
+}
+
+/* BUTTONS */
+
+.quiz-button {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 3px;
+  float: left;
+  margin-left: 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.button-red {
+  color: red;
+  border: 1px solid red;
+}
+
+.button-green {
+  color: green;
+  border: 1px solid green;
+}
+
+.big-button {
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 10px;
+  padding: 5px 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.go-back {
+  clear: both;
+  padding-top: 15px;
+  font-size: 10px;
+  cursor: pointer;
+  color: red;
+}
+
+/* DIRECTIVES */
+
+.result-heading img {
+  float: left;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.result-heading strong {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.result-heading {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.result-description {
+  font-size: 12px;
+  clear: both;
+}
+
+
+/* Boostrap override */
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  min-height: 50px;
+}
