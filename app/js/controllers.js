@@ -1,9 +1,6 @@
 'use strict';
 
-/* Controllers */
-
-angular.module('parcQuiz.controllers', [])
-.controller('Quiz', ['$scope', 'localStorageService', 'questionService', 'headingService', '$location', function($scope, localStorageService, questionService, headingService, $location) {
+angular.module('parcQuiz.controllers').controller('Quiz', ['$scope', 'localStorageService', 'questionService', 'headingService', '$location', function($scope, localStorageService, questionService, headingService, $location) {
  
   // Results from Questions 1 (strategy)
     

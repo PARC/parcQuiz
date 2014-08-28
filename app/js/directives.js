@@ -1,7 +1,6 @@
 'use strict';
-angular.module('parcQuiz.directives', [])
 
-.directive('agreeDisagree', [function(version) {
+angular.module('parcQuiz.directives', []).directive('agreeDisagree', [function(version) {
   return {
     scope: {
       "result": "=",
