@@ -4,7 +4,7 @@ angular.module('parcQuiz.services').service('questionService', [function() {
   
   var questionData={};
   
-  // Questions 1
+  // Question Block 1
   questionData.questions1 = [
   {
     "question": "We have high ambition for innovation, but we don't always take prompt or consistent action.",
@@ -48,7 +48,7 @@ angular.module('parcQuiz.services').service('questionService', [function() {
   },
   ]
 
-  // Questions 2
+  // Question Block 2
   questionData.questions2 = [
   {
     "question": "We embrace risk.",
@@ -97,6 +97,127 @@ angular.module('parcQuiz.services').service('questionService', [function() {
   },
   ]
   
+  // Question Block 3
+  questionData.questions3 = {
+    "question": "My company's attitude to the threat of disruption is...",
+    "result" : undefined,
+    "answers" :
+    [{  
+      "answer" : "We act as if our industry will stay as it is forever.",
+      "weight" : -5
+    },
+    {  
+      "answer" : "We will survive in some form.",
+      "weight" : -3
+    },
+    {  
+      "answer" : "We are prepared for disruption.",
+      "weight" : 2
+    },
+    {  
+      "answer" : "We will get stronger as a result of disruption.",
+      "weight" : 3
+    },
+    {  
+      "answer" : "We will disrupt the market ourselves.",
+      "weight" : 5
+    }]
+  }
+  
+  // Question Block 4
+  questionData.questions4 = {
+    "question": "My company's ROI on innovation has been...",
+    "result" : undefined,
+    "answers" :
+    [{  
+      "answer" : "Very weak.",
+      "weight" : -5
+    },
+    {  
+      "answer" : "Weak.",
+      "weight" : -4
+    },
+    {  
+      "answer" : "Competitive with peers.",
+      "weight" : 0
+    },
+    {  
+      "answer" : "Strong.",
+      "weight" : 4
+    },
+    {  
+      "answer" : "Very strong.",
+      "weight" : 5
+    }]
+  }
+  
+  // Question Block 5
+  questionData.questions5 = {
+    "question": "Who participates in innovation in your company? (check all that apply)",
+    "answers" :
+    [{  
+      "answer" : "All employees.",
+      "weight" : 5,
+      "checked": false
+    },
+    {  
+      "answer" : "Only top-level management.",
+      "weight" : 0,
+      "checked": false
+    },
+    {  
+      "answer" : "Specialized innovation functions/leaders/champions.",
+      "weight" : 1,
+      "checked": false
+    }]
+  }
+
+  // Question Block 6
+  questionData.questions6 = {
+    "question": "Who participates in innovation in your company? (check all that apply)",
+    "answers" :
+    [{  
+      "answer" : "Innovation processes and tools.",
+      "weight" : 5,
+      "checked": false
+    },
+    {  
+      "answer" : "Innovation fund or allocated budget.",
+      "weight" : 0,
+      "checked": false
+    },
+    {  
+      "answer" : "Incubator for new ventures.",
+      "weight" : 0,
+      "checked": false
+    },
+    {  
+      "answer" : "Innovation coaches.",
+      "weight" : 0,
+      "checked": false
+    },
+    {  
+      "answer" : "Innovation Management System.",
+      "weight" : 0,
+      "checked": false
+    },
+    {  
+      "answer" : "Cross-business innovation metrics.",
+      "weight" : 0,
+      "checked": false
+    },
+    {  
+      "answer" : "IP licensing support team.",
+      "weight" : 0,
+      "checked": false
+    },
+    {  
+      "answer" : "None.",
+      "weight" : 1,
+      "checked": false
+    }]
+  }
+
   return questionData;
   
 }]);

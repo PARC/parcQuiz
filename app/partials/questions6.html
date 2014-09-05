@@ -1,0 +1,24 @@
+<div class="container table">
+  <div class="row tbody">
+    <div class="col-xs-9 quiz-heading">{{ headings.heading3 }}: {{ headings.subheading2 }}</div>
+  </div>
+  <div class="row tbody">
+    <div class="col-xs-9 selected">{{ questions6.question }}</div>
+  </div>
+  <div class="row tbody" ng-repeat="a in questions6.answers">
+    <div class="col-xs-6">{{ a.answer }}</div>
+    <div class="col-xs-3">
+      <div class="checkbox" ng-click="a.checked=!a.checked">
+        <div ng-show="a.checked">✓</div>
+      </div>
+    </div>
+  </div>
+  <div class="row tbody">
+    <div class="col-xs-6"></div>
+    <div class="col-xs-3">
+      <span ng-repeat='a in filtered = (questions6.answers | filter:{checked: true})'></span>
+      <div ng-click="redirect('/resultsLevel3', 'questions6')" ng-show="filtered.length > 0" class="quiz-button big-button">NEXT</div>
+      <div class="go-back" ng-click="redirect('/questions5', 'questions6')">GO BACK</div>
+    </div>
+  </div>
+</div>

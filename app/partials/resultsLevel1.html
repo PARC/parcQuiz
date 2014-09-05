@@ -1,28 +1,35 @@
-<div class="results table">
-
-  <div class="heading">
-    Report Card
+<div class="container table results">
+  <div class="row tbody">
+    <div class="col-xs-9 heading">
+      Report Card
+    </div>
   </div>
-
-  <div class="subheadings">
-    <span class="selected">{{ headings.heading1 }}</span>    
-    <span>{{ headings.heading2 }}</span>    
-    <span>{{ headings.heading3 }}</span>    
+  <div class="row tbody">
+    <div class="col-xs-9 subheadings">
+      <span class="selected">{{ headings.heading1 }}</span>    
+      <span>{{ headings.heading2 }}</span>    
+      <span>{{ headings.heading3 }}</span>    
+    </div>
   </div>
-
-  <div devil   ng-if="strategyLevel1 <=3 && cultureLevel1 <=3"></div>
-  <div penguin ng-if="strategyLevel1 <=3 && cultureLevel1 >=4"></div>
-  <div tiger   ng-if="strategyLevel1 >=4 && cultureLevel1 <=3"></div>
-  <div dolphin ng-if="strategyLevel1 >=4 && cultureLevel1 >=4"></div>
-
+  <div class="row tbody">
+    <div class="col-xs-9">
+      <div devil   ng-if="strategyL1 <=3 && cultureL1 <=3"></div>
+      <div penguin ng-if="strategyL1 <=3 && cultureL1 >=4"></div>
+      <div tiger   ng-if="strategyL1 >=4 && cultureL1 <=3"></div>
+      <div dolphin ng-if="strategyL1 >=4 && cultureL1 >=4"></div>
+    </div>
+  </div>
+  <div class="row tbody">
+    <div class="col-xs-9">
+      <div ng-click="redirect('/questions3')" class="quiz-button big-button">NEXT</div>
+      <div class="go-back" ng-click="redirect('/questions2')">GO BACK</div>
+    </div>
+  </div>
 </div>
-
-
-<div class="go-back" ng-click="redirect('/questions2')">GO BACK</div>
 
 <hr>
 <b>debug</b>
 <br>
-stratey: {{strategyLevel1}}
+strategy: {{strategyL1}}
 <br>
-culture: {{cultureLevel1}}
+culture: {{cultureL1}}
