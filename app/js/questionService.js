@@ -174,7 +174,7 @@ angular.module('parcQuiz.services').service('questionService', [function() {
 
   // Question Block 6
   questionData.questions6 = {
-    "question": "Who participates in innovation in your company? (check all that apply)",
+    "question": "What mechanisms support innovation in your company? (check all that apply)",
     "answers" :
     [{  
       "answer" : "Innovation processes and tools.",

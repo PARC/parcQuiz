@@ -18,6 +18,7 @@ var parcQuiz = angular.module('parcQuiz', [
 .config(['$routeProvider', 'localStorageServiceProvider', function($routeProvider, localStorageServiceProvider) {
   localStorageServiceProvider.setPrefix('PARC');
   $routeProvider.when('/splash', {templateUrl: 'partials/splash.html', controller: 'Quiz'});
+  $routeProvider.when('/faq', {templateUrl: 'partials/faq.html', controller: 'Quiz'});
   $routeProvider.when('/questions1', {templateUrl: 'partials/questions1.html', controller: 'Quiz'});
   $routeProvider.when('/questions2', {templateUrl: 'partials/questions2.html', controller: 'Quiz'});
   $routeProvider.when('/questions3', {templateUrl: 'partials/questions3.html', controller: 'Quiz'});

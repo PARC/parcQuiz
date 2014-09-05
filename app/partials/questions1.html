@@ -1,16 +1,16 @@
 <div class="container table">
   <div class="row tbody">
-    <div class="col-xs-8 quiz-heading">{{ headings.heading1 }}: {{ headings.subheading1 }}</div>
+    <div class="col-xs-11 quiz-heading">{{ headings.heading1 }}: {{ headings.subheading1 }}</div>
   </div>
   <div class="row tbody question" ng-repeat="q in questions1">
-    <div class="col-xs-5" ng-class="{selected: q.result==undefined && (questions1[$index-1].result!=undefined || $index==0)}">{{ q.question }}</div>
+    <div class="col-xs-8" ng-class="{selected: q.result==undefined && (questions1[$index-1].result!=undefined || $index==0)}">{{ q.question }}</div>
     <div class="col-xs-3"><div agree-disagree 
                               result="q.result" 
                               previous-result="questions1[$index-1].result"
                               question-number="$index"></div></div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-5"></div>
+    <div class="col-xs-8"></div>
     <div class="col-xs-3">
       <div ng-click="redirect('/questions2', 'questions1')" ng-hide="questions1[questions1.length-1].result==undefined" class="quiz-button big-button">NEXT</div>
       <div class="go-back" ng-click="redirect('/splash', 'questions1')">GO BACK</div>

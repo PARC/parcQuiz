@@ -1,18 +1,18 @@
 <div class="container table results">
   <div class="row tbody">
-    <div class="col-xs-7 heading">
+    <div class="col-xs-11 heading">
       Report Card
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-7 subheadings">
-      <span>{{ headings.heading1 }}</span>    
-      <span>{{ headings.heading2 }}</span>    
-      <span class="selected">✓ {{ headings.heading3 }}</span>    
+    <div class="col-xs-11 subheadings">
+      <span class="selected"><a href="#/resultsLevel1">✓ {{ headings.heading1 }}</a></span> 
+      <span class="selected"><a href="#/resultsLevel2">✓ {{ headings.heading2 }}</a></span>  
+      <span class="selected">✓ {{ headings.heading3 }}</span>         
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-7">
+    <div class="col-xs-11">
       <div devil   ng-if="strategyL3 <=9 && cultureL3 <=6"></div>
       <div penguin ng-if="strategyL3 <=9 && cultureL3 >=7"></div>
       <div tiger   ng-if="strategyL3 >=10 && cultureL3 <=6"></div>
@@ -20,9 +20,10 @@
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-7">
-      <div class="quiz-button big-button">Done</div>
-      <div class="go-back" ng-click="redirect('/questions6')">GO BACK</div>
+    <div class="col-xs-3"></div>
+    <div class="col-xs-8">
+      <div ng-click="redirect('/questions6')" class="quiz-button big-button">BACK</div>
+      <div class="quiz-button big-button">NEXT</div>
     </div>
   </div>
 </div>

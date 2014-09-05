@@ -57,6 +57,11 @@ body {
   margin-bottom: 10px;
 }
 
+/* FAQ PAGE */
+.faqs div {
+  margin-bottom: 20px;
+}
+
 /* RESULTS PAGE */
 
 .results .heading {
@@ -73,6 +78,29 @@ body {
 
 .results .subheadings .selected {
   color: black;
+}
+
+.results .subheadings a {
+  color: black;
+}
+
+.results .animal-name {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.results .animal-description {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.results ul {
+  padding-left: 20px;
+}
+
+.results li {
+  margin-bottom: 20px;
 }
 
 /* BUTTONS */
