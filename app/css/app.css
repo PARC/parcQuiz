@@ -1,13 +1,15 @@
-/* SPLASH PAGE */
-
-.splash .subheading {
-  margin-bottom: 8px;
+/* GLOBAL */
+body {
+  font-family: 'Open Sans';
 }
+
+/* SPLASH PAGE */
 
 .splash .heading {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 12px;
+  margin-top: -15px;
 }
 
 .splash .description {
@@ -35,12 +37,24 @@
 
 .quiz-heading {
   font-size: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .table {
   margin-top: 20px;
   margin-left: 20px;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+.question div {
+  min-height: 0;
+}
+
+.question-title {
+  margin-bottom: 10px;
 }
 
 /* RESULTS PAGE */
@@ -51,13 +65,9 @@
   margin-bottom: -10px;
 }
 
-.results .subheadings {
-  margin-bottom: 25px;
-}
-
 .results .subheadings span {
   color: #888888;
-  font-weight: bold;
+  font-weight: 600;
   margin-right: 24px;
 }
 
@@ -69,7 +79,7 @@
 
 .radio {
   border-radius: 50%;
-  border: 1px solid green;
+  border: 1px solid #2a8862;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -77,8 +87,8 @@
 
 .radio div {
   border-radius: 50%;
-  border: 1px solid green;
-  background: green;
+  border: 1px solid #2a8862;
+  background: #2a8862;
   width: 6px;
   height: 6px;
   margin-top: 6px;
@@ -86,7 +96,7 @@
 }
 
 .checkbox {
-  border: 1px solid green;
+  border: 1px solid #2a8862;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -96,27 +106,31 @@
   margin-top: -5px;
   margin-left: 3px;
   font-size: 20px;
-  color: green;
+  color: #2a8862;
 }
 
 .quiz-button {
   border: 1px solid black;
-  padding: 5px 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   border-radius: 3px;
   float: left;
   margin-left: 10px;
   font-size: 10px;
   cursor: pointer;
+  min-width: 62px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .button-red {
-  color: red;
-  border: 1px solid red;
+  color: #b82849;
+  border: 1px solid #b82849;
 }
 
 .button-green {
-  color: green;
-  border: 1px solid green;
+  color: #2a8862;
+  border: 1px solid #2a8862;
 }
 
 .big-button {
@@ -133,7 +147,7 @@
   padding-top: 15px;
   font-size: 10px;
   cursor: pointer;
-  color: red;
+  color: #b82849;
 }
 
 /* DIRECTIVES */

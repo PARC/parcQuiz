@@ -1,12 +1,12 @@
 <div class="container table">
   <div class="row tbody">
-    <div class="col-xs-9 quiz-heading">{{ headings.heading2 }}: {{ headings.subheading1 }}</div>
+    <div class="col-xs-8 quiz-heading">{{ headings.heading2 }}: {{ headings.subheading1 }}</div>
   </div>
-  <div class="row tbody">
-    <div class="col-xs-9 selected">{{ questions3.question }}</div>
+  <div class="row tbody question-title">
+    <div class="col-xs-8 selected">{{ questions3.question }}</div>
   </div>
-  <div class="row tbody" ng-repeat="a in questions3.answers">
-    <div class="col-xs-6">{{ a.answer }}</div>
+  <div class="row tbody question" ng-repeat="a in questions3.answers">
+    <div class="col-xs-5">{{ a.answer }}</div>
     <div class="col-xs-3">
       <div class="radio" ng-click="toggleVisibility(a); questions3.result=a.weight">
         <div ng-show="isVisible(a) || questions3.result==a.weight"></div>
@@ -14,7 +14,7 @@
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-6"></div>
+    <div class="col-xs-5"></div>
     <div class="col-xs-3">
       <div ng-click="redirect('/questions4', 'questions3')" ng-hide="questions3.result==undefined" class="quiz-button big-button">NEXT</div>
       <div class="go-back" ng-click="redirect('/resultsLevel1', 'questions3')">GO BACK</div>

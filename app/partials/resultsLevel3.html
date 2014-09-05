@@ -1,18 +1,18 @@
 <div class="container table results">
   <div class="row tbody">
-    <div class="col-xs-9 heading">
+    <div class="col-xs-7 heading">
       Report Card
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-9 subheadings">
+    <div class="col-xs-7 subheadings">
       <span>{{ headings.heading1 }}</span>    
       <span>{{ headings.heading2 }}</span>    
-      <span class="selected">{{ headings.heading3 }}</span>    
+      <span class="selected">✓ {{ headings.heading3 }}</span>    
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-9">
+    <div class="col-xs-7">
       <div devil   ng-if="strategyL3 <=9 && cultureL3 <=6"></div>
       <div penguin ng-if="strategyL3 <=9 && cultureL3 >=7"></div>
       <div tiger   ng-if="strategyL3 >=10 && cultureL3 <=6"></div>
@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-9">
+    <div class="col-xs-7">
       <div class="quiz-button big-button">Done</div>
       <div class="go-back" ng-click="redirect('/questions6')">GO BACK</div>
     </div>
