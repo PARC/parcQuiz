@@ -4,6 +4,7 @@
       Report Card
     </div>
   </div>
+  
   <div class="row tbody">
     <div class="col-xs-11 subheadings">
       <span class="selected"><a href="#/resultsLevel1">✓ {{ headings.heading1 }}</a></span> 
@@ -11,26 +12,39 @@
       <span class="selected">✓ {{ headings.heading3 }}</span>         
     </div>
   </div>
+  
   <div class="row tbody">
     <div class="col-xs-11">
-      <div devil   ng-if="strategyL3 <=9 && cultureL3 <=6"></div>
-      <div penguin ng-if="strategyL3 <=9 && cultureL3 >=7"></div>
-      <div tiger   ng-if="strategyL3 >=10 && cultureL3 <=6"></div>
-      <div dolphin ng-if="strategyL3 >=10 && cultureL3 >=7"></div>
+      <div devil   ng-if="strategyL3 <=9 && cultureL3 <=6" recommendation="recommendation"></div>
+      <div penguin ng-if="strategyL3 <=9 && cultureL3 >=7" recommendation="recommendation"></div>
+      <div tiger   ng-if="strategyL3 >=10 && cultureL3 <=6" recommendation="recommendation"></div>
+      <div dolphin ng-if="strategyL3 >=10 && cultureL3 >=7" recommendation="recommendation"></div>
     </div>
   </div>
+  
   <div class="row tbody">
-    <div class="col-xs-3"></div>
-    <div class="col-xs-8">
-      <div ng-click="redirect('/questions6')" class="quiz-button big-button">BACK</div>
-      <div class="quiz-button big-button">NEXT</div>
+    <div class="col-xs-9 col-xs-offset-2">
+      <div ng-show="!recommendation" ng-click="redirect('/questions6')" class="quiz-button big-button">BACK</div>
+      <div ng-show="!recommendation" ng-click="recommendation=!recommendation" class="quiz-button big-button">NEXT</div>
+      <div ng-show="recommendation" ng-click="recommendation=!recommendation" class="quiz-button big-button">BACK</div>
     </div>
   </div>
-</div>
+  
+  <!-- <div class="row tbody">
+    <div class="col-xs-9 col-xs-offset-2 share-quiz">
+      <p><strong>Share this Quiz (your result will not be shared)</strong> </p>
+      <span class='st_facebook_large'   st_url="http://www.parc.com" displayText='Facebook'></span>
+      <span class='st_googleplus_large' st_url="http://www.parc.com" displayText='Google +'></span>
+      <span class='st_twitter_large'    st_url="http://www.parc.com" displayText='Tweet'></span>
+      <span class='st_linkedin_large'   st_url="http://www.parc.com" displayText='LinkedIn'></span>
+    </div>
+  </div> -->
 
-<hr>
-<b>debug</b>
-<br>
-strategy: {{strategyL3}}
-<br>
-culture: {{cultureL3}}
+  <div class="row tbody">
+    <div class="col-xs-9 col-xs-offset-2">
+      <div class="hyperLink" ng-click="clearLocalStorage(); redirect('/splash');">RESET QUIZ</div>
+      <small>strategy: {{strategyL3}} | culture: {{cultureL3}}</small>
+    </div>
+  </div>
+  
+</div>

@@ -1,21 +1,36 @@
 <div class="container table">
   <div class="row tbody">
+    
     <div class="col-xs-2 result-heading">
       <img src="img/penguin.png">
     </div>
-    <div class="col-xs-7">
+    
+    <div class="col-xs-7" ng-if="!recommendation">
       <div class="animal-name">
         Penguin
       </div>
       <div class="animal-description">
-        Group players that support each other for survival.
+        Supportive cultures that may lack the killer instinct needed to thrive longer term.
       </div>
       <ul>
-        <li>Innovation is talked about and encouraged in your organization.</li>
-        <li>Existing innovation process and tools, but perhaps people within the organization are not able to take full advantage of them.</li>
+        <li>Penguins often have well-deployed innovation process and tools, but don’t seem to get good returns from those capabilities.  </li>
+        <li>Somehow – pressure  of short-term deadlines, sheer scale, poor communications, lack of local management support – people within the organization are not able to take full advantage of them.</li>
         <li>You feel that your organization is too large to manage innovation effectively or in an agile way.</li>
-        <li>Innovation is widely encouraged, but unfocused, and not quite integrated to company strategy or vision.</li>
+        <li>Innovation is widely encouraged, but unfocused, and not quite integrated with company strategy or vision. </li>
       </ul>
     </div>
+    
+    <div class="col-xs-7" ng-if="recommendation">
+      <div class="animal-name">
+        Penguin Recommendations
+      </div>
+      <ol>
+        <li>Identify a clear growth vision and strategy: one that forces clear choices, i.e., excludes some opportunities/areas of business</li>
+        <li>Link key innovation programs to business unit goals and set clear priorities. </li>
+        <li>Develop ways to measure innovation programs and track their progress at both business unit and company levels.</li>
+        <li>Link middle- and senior-management compensation to innovation objectives, to ensure sufficient focus on launching and managing innovation projects.</li>
+      </ol>
+    </div>
+    
   </div>
 </div>

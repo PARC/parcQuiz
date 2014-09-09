@@ -14,11 +14,10 @@
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-8"></div>
-    <div class="col-xs-3">
+    <div class="col-xs-3 col-xs-offset-8">
       <span ng-repeat='a in filtered = (questions5.answers | filter:{checked: true})'></span>
       <div ng-click="redirect('/questions6', 'questions5')" ng-show="filtered.length > 0" class="quiz-button big-button">NEXT</div>
-      <div class="go-back" ng-click="redirect('/resultsLevel2', 'questions5')">GO BACK</div>
+      <div class="hyperLink" ng-click="redirect('/resultsLevel2', 'questions5')">GO BACK</div>
     </div>
   </div>
 </div>

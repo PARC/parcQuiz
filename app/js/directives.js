@@ -82,24 +82,36 @@ angular.module('parcQuiz.directives', []).directive('agreeDisagree', [function(v
 
 .directive('penguin', [function(version) {
   return {
+    scope: {
+      "recommendation": "=",
+    },
     templateUrl: "templates/penguin.html"
   }
 }])
 
 .directive('devil', [function(version) {
   return {
+    scope: {
+      "recommendation": "=",
+    },
     templateUrl: "templates/devil.html"
   }
 }])
 
 .directive('tiger', [function(version) {
   return {
+    scope: {
+      "recommendation": "=",
+    },
     templateUrl: "templates/tiger.html"
   }
 }])
 
 .directive('dolphin', [function(version) {
   return {
+    scope: {
+      "recommendation": "=",
+    },
     templateUrl: "templates/dolphin.html"
   }
-}]);
+}])

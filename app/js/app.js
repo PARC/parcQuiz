@@ -28,6 +28,7 @@ var parcQuiz = angular.module('parcQuiz', [
   $routeProvider.when('/resultsLevel1', {templateUrl: 'partials/resultsLevel1.html', controller: 'Quiz'});
   $routeProvider.when('/resultsLevel2', {templateUrl: 'partials/resultsLevel2.html', controller: 'Quiz'});
   $routeProvider.when('/resultsLevel3', {templateUrl: 'partials/resultsLevel3.html', controller: 'Quiz'});
+  $routeProvider.when('/share', {templateUrl: 'partials/share.html', controller: 'Quiz'});
   $routeProvider.otherwise({redirectTo: '/splash'});
 }]);
 

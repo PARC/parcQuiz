@@ -1,21 +1,38 @@
 <div class="container table">
   <div class="row tbody">
-    <div class="col-xs-3 result-heading">
+  
+    <div class="col-xs-2 result-heading">
       <img src="img/devil.png">
     </div>
-    <div class="col-xs-6">
+  
+    <div class="col-xs-7" ng-if="!recommendation">
       <div class="animal-name">
         Tasmanian Devil
       </div>
       <div class="animal-description">
-        Vigorous lone animals that are vulnerable outside of their own environment
+        Vigorous lone animals that resist change.  T-Devils often have no clear vision for innovation.
       </div>
       <ul>
-        <li>Trying hard to stay relevant in the existing market. Powerful brand equity but no clear vision or strategy.</li>
-        <li>Quite vulnerable to future market change, but a robust balance sheet could find a recovery.</li>
-        <li>There are some innovation initiatives but none of them seem like a big idea.</li>
-        <li>Disconnect between the management and employees: no common commitment.</li>
+        <li>Current business is often sustained by powerful brand equity left over from past successes.</li>
+        <li>This legacy – and the inflexible mental models it reflects – can inhibit growth through innovation.</li>
+        <li>T-Devils struggle to stay relevant as markets change; growth is often delayed, then expensive (e.g., acquisitions).</li>
+        <li>All energy goes into driving the current business.  Management does not encourage or reward innovation efforts.</li>
       </ul>
     </div>
+  
+    <div class="col-xs-7" ng-if="recommendation">
+      <div class="animal-name">
+        Devil Recommendations
+      </div>
+      <ol>
+        <li>First, decide whether innovation is needed everywhere or just in some business areas/units.  If the challenge is in specific areas, go straight to Step 4; if the need is companywide, go to Step 2.</li>
+        <li>Ensure senior leaders are committed to organic growth.  If leaders are content with current performance, they will have no interest in innovation.</li>
+        <li>Frame a clear strategic roadmap that commits the company to developing valuable offerings in growth markets.  Be careful to focus: a narrower, distinctive growth ambition will liberate more energy than an expansive but generic one!  The roadmap sets priorities for innovation projects.</li>
+        <li>Learn by doing: set up innovation teams, give them a process and a mandate, and get some projects going in areas where the company really needs to upgrade it’s offerings.  Be generous with these early efforts: you are learning the method as well as harvesting the growth opportunities.</li>
+        <li>Extend and expand: as results come in, celebrate successful initiatives and be open about experiments that didn’t succeed.  Tweak methods and export the model to other areas.</li>
+      </ol>
+    </div>
+  
   </div>
 </div>
+

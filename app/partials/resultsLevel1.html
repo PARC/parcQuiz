@@ -23,15 +23,11 @@
     </div>
   </div>
   <div class="row tbody">
-    <div class="col-xs-3"></div>
-    <div class="col-xs-8">
-      <div ng-click="redirect('/questions2')" class="quiz-button big-button">BACK</div>
+    <div class="col-xs-9 col-xs-offset-2">
+      <div ng-click="redirect('/questions2')" class="quiz-button big-button margin-left-15">BACK</div>
       <div ng-click="redirect('/questions3')" class="quiz-button big-button">NEXT</div>
+      <div class="hyperLink" ng-click="clearLocalStorage(); redirect('/splash');">RESET QUIZ</div>
+      <small>strategy: {{strategyL1}} | culture: {{cultureL1}}</small>
     </div>
   </div>
 </div>
-
-
-strategy: {{strategyL1}}
-<br>
-culture: {{cultureL1}}

@@ -1,21 +1,38 @@
 <div class="container table">
   <div class="row tbody">
-    <div class="col-xs-3 result-heading">
+    
+    <div class="col-xs-2 result-heading">
       <img src="img/tiger.png">
     </div>
-    <div class="col-xs-6">
+    
+    <div class="col-xs-7" ng-if="!recommendation">
       <div class="animal-name">
         Tiger
       </div>
       <div class="animal-description">
-        Iconoclastic lone animals with a clever strategy
+        Iconoclastic lone predators who often grow by acquisition.  Tigers tend to be lean and profitable, and approach innovation in a focused way.
       </div>
       <ul>
-        <li>Relatively strong strategy and business</li>
-        <li>Strategically invested in key innovation programs.</li>
-        <li>Strong leadership</li>
-        <li>Potentially vulnerable to paradigm shift in your industry</li>
+        <li>Tigers have relatively strong strategic focus on key products and markets, but often don’t look for future growth spaces.</li>
+        <li>Tigers invest strategically in key innovation programs, often via centralized R&D functions, that support core business lines.</li>
+        <li>Strong leadership that is usually financially-driven to deliver high margins from lean operations.</li>
+        <li>Tigers are potentially vulnerable to paradigm shifts in their industry, such as from entrants with disruptive technologies or business models.</li>
       </ul>
     </div>
+    
+    <div class="col-xs-7" ng-if="recommendation">
+      <div class="animal-name">
+        Tiger Recommendations
+      </div>
+      <ol>
+        <li>Consider disrupting your own business before someone else does it!</li>
+        <li>Prepare for market change: consolidation and lean operations do not constitute a growth strategy.</li>
+        <li>Create key performance metrics that are not cost and capability based. </li>
+        <li>Encourage management to sponsor innovation programs that include exploration of new business models.</li>
+      </ol>
+    </div>
+    
   </div>
 </div>
+
+

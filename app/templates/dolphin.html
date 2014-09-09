@@ -1,20 +1,41 @@
 <div class="container table">
   <div class="row tbody">
-    <div class="col-xs-3 result-heading">
+    
+    <div class="col-xs-2 result-heading">
       <img src="img/dolphin.png">
     </div>
-    <div class="col-xs-6">
+    
+    <div class="col-xs-7" ng-if="!recommendation">
       <div class="animal-name">
         Dolphin
       </div>
       <div class="animal-description">
-        Curious intelligent mammals that play well in a group. Relatively matured inovation culture and strategy.
+        Intelligent and highly social mammals that stay curious.  Dolphins have relatively mature innovation culture and strategy.
       </div>
       <ul>
-        <li>Clear management support and innovation.</li>
-        <li>Innovation agenda is more or lress aligned with company strategies.</li>
-        <li>Innovation mechanism (process, tools and system) are well deployed.</li>
+        <li>There is clear management support for innovation.</li>
+        <li>The innovation agenda is more or less aligned with business strategies across the company.</li>
+        <li>Supporting innovation mechanisms (processes, tools, coaching, funds…) are well deployed.</li>
+        <li>Everyone, or almost everyone, can get trained, supported, and staffed on innovation projects.</li>
       </ul>
     </div>
+    
+    <div class="col-xs-7" ng-if="recommendation">
+      <div class="animal-name">
+        Dolphin Recommendations
+      </div>
+      <ol>
+        <li>You are ready for advanced strategic management of innovation:</li>
+        <ol type="a">
+          <li>Consider establishing a cross-company coordination function for innovation to ensure consistent access to best practice process, tools, and coaching. </li>
+          <li>Manage your innovation portfolio by consolidating innovation initiatives for better resource utilization.</li>
+          <li>Link innovation activities explicitly to growth strategy to ensure the highest ROI. </li>
+        </ol>
+        <li>Explore both inbound (ideas, in-licensing) and outbound (out-licensing, spin outs) Open Innovation with partners whose capabilities complement yours.</li>
+        <li>Improve/develop ways of evaluating innovation programs.</li>
+        <li>Beware of strategy decay: Today’s leaders are vulnerable to the belief that their markets and business models will always be secure.</li>
+      </ol>
+    </div>
+        
   </div>
 </div>

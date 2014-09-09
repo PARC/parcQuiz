@@ -2,7 +2,7 @@
 
 angular.module('parcQuiz.controllers').controller('Quiz', ['$scope', 'localStorageService', 'questionService', 'headingService', '$location', function($scope, localStorageService, questionService, headingService, $location) {
    
-  //Local Storage Retrieval // localStorageService.clearAll();    
+  //Local Storage Retrieval   
   for (var x = 1; x<=6; x++) {
     $scope["questions" + x] = questionService["questions" + x]
     if (localStorageService.get("questions" + x) !=  undefined ) {
@@ -10,8 +10,15 @@ angular.module('parcQuiz.controllers').controller('Quiz', ['$scope', 'localStora
     }
   }
   
+  $scope.clearLocalStorage = function() {
+    localStorageService.clearAll();
+  }
+  
   // Expose the headings service to the scope
   $scope.headings = headingService
+  
+  // Set the recommendations to false by default
+  $scope.recommendation = false
       
   // Save and redirect when clicking back for forward buttons
   $scope.redirect = function(url, saveObject) {
@@ -90,5 +97,5 @@ angular.module('parcQuiz.controllers').controller('Quiz', ['$scope', 'localStora
   if (q6answers[7].checked == true)  { cultureL3 += -5 }
      
   $scope.cultureL3 = cultureL2 + cultureL3 
-  
+    
 }]);
