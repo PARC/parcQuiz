@@ -10,8 +10,10 @@ angular.module('parcQuiz.controllers').controller('Quiz', ['$scope', 'localStora
     }
   }
   
-  $scope.clearLocalStorage = function() {
-    localStorageService.clearAll();
+  $scope.resetQuiz = function() {
+    localStorageService.clearAll()
+    alert("Please click your browser's refresh button after the page loads.")
+    $location.path("/splash")
   }
   
   // Expose the headings service to the scope
@@ -22,7 +24,7 @@ angular.module('parcQuiz.controllers').controller('Quiz', ['$scope', 'localStora
       
   // Save and redirect when clicking back for forward buttons
   $scope.redirect = function(url, saveObject) {
-    if (saveObject !=  undefined) {
+    if (saveObject != undefined) {
       localStorageService.set(saveObject,$scope[saveObject]);
     }
     $location.path(url);
