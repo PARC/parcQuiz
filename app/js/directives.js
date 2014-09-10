@@ -115,3 +115,9 @@ angular.module('parcQuiz.directives', []).directive('agreeDisagree', [function(v
     templateUrl: "templates/dolphin.html"
   }
 }])
+
+.directive('faqModal', [function(version) {
+  return {
+    templateUrl: "templates/faq.html"
+  }
+}])

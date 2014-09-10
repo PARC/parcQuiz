@@ -53,7 +53,18 @@ code {
 }
 
 .navbar img {
-  margin-top: 11px;
+  margin-top: 16px;
+  height: 35px;
+}
+
+.navbar .title {
+  font-size: 26px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.navbar .title a {
+  color: white;
 }
 
 
@@ -113,8 +124,18 @@ code {
 }
 
 /* FAQ PAGE */
+
 .faqs div {
   margin-bottom: 20px;
+}
+
+.faqs div:last-child {
+  margin-bottom: 0px;
+}
+
+.faq-close {
+  margin-top: 0px !important;
+  float: right !important;
 }
 
 /* RESULTS PAGE */
