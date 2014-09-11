@@ -65,6 +65,16 @@ code {
 
 .navbar .title a {
   color: white;
+  float: left;
+  text-decoration: none;
+}
+
+.navbar .preview {
+  font-size: 14px;
+  color: #dddddd;
+  margin-top: 3px;
+  margin-left: 7px;
+  float:left;
 }
 
 
